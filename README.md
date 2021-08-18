@@ -200,7 +200,7 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [tty]: https://nodejs.org/api/tty.html#tty_tty
 
-[@stdlib/streams/node/stdin]: https://github.com/stdlib-js/stdlib
+[@stdlib/streams/node/stdin]: https://github.com/stdlib-js/streams-node-stdin
 
 </section>
 
