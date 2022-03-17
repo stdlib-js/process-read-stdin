@@ -41,6 +41,7 @@
     "@stdlib/buffer-ctor": "^0.0.x",
     "@stdlib/buffer-from-string": "^0.0.x",
     "@stdlib/streams-node-stdin": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/utils-next-tick": "^0.0.x"
   },
   "devDependencies": {
