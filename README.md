@@ -24,14 +24,30 @@ limitations under the License.
 
 > Read data from [`stdin`][@stdlib/streams/node/stdin].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/process-read-stdin
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@esm/index.mjs';
+var stdin = require( '@stdlib/process-read-stdin' );
 ```
 
 #### stdin( \[encoding,] clbk )
@@ -73,7 +89,7 @@ When a file's calling Node.js process is running in a [TTY][tty] context (i.e., 
 <!-- run-disable -->
 
 ```javascript
-import stream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@esm/index.mjs';
+var stream = require( '@stdlib/streams-node-stdin' );
 
 function onRead( error, data ) {
     if ( error ) {
@@ -100,15 +116,10 @@ stdin( 'utf8', onRead );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@esm/index.mjs';
-import stream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@esm/index.mjs';
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@esm/index.mjs';
+```javascript
+var string2buffer = require( '@stdlib/buffer-from-string' );
+var stream = require( '@stdlib/streams-node-stdin' );
+var stdin = require( '@stdlib/process-read-stdin' );
 
 function onRead( error, data ) {
     if ( error ) {
@@ -132,10 +143,6 @@ stream.push( string2buffer( 'boop' ) );
 
 // End the stream:
 stream.push( null );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -159,7 +166,7 @@ stream.push( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -215,6 +222,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/process-read-stdin/tree/deno
 [umd-url]: https://github.com/stdlib-js/process-read-stdin/tree/umd
 [esm-url]: https://github.com/stdlib-js/process-read-stdin/tree/esm
+[branches-url]: https://github.com/stdlib-js/process-read-stdin/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/process-read-stdin/main/LICENSE
 
@@ -222,7 +230,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [tty]: https://nodejs.org/api/tty.html#tty_tty
 
-[@stdlib/streams/node/stdin]: https://github.com/stdlib-js/streams-node-stdin/tree/esm
+[@stdlib/streams/node/stdin]: https://github.com/stdlib-js/streams-node-stdin
 
 </section>
 
