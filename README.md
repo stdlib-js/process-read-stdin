@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.stdin;
+})();
 })();
 </script>
 ```
@@ -133,6 +135,7 @@ stdin( 'utf8', onRead );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 function onRead( error, data ) {
     if ( error ) {
@@ -157,6 +160,7 @@ stream.push( string2buffer( 'boop' ) );
 // End the stream:
 stream.push( null );
 
+})();
 })();
 </script>
 </body>
@@ -248,7 +252,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [tty]: https://nodejs.org/api/tty.html#tty_tty
 
-[@stdlib/streams/node/stdin]: https://github.com/stdlib-js/streams-node-stdin/tree/umd
+[@stdlib/streams/node/stdin]: https://github.com/stdlib-js/streams-node-stdin/tree/umd/tree/umd
 
 </section>
 
