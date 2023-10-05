@@ -45,7 +45,7 @@
     "@stdlib/utils-next-tick": "^0.1.1"
   },
   "devDependencies": {
-    "@stdlib/assert-is-browser": "^0.1.0",
+    "@stdlib/assert-is-browser": "^0.1.1",
     "@stdlib/assert-is-buffer": "^0.1.1",
     "@stdlib/utils-noop": "^0.1.1",
     "proxyquire": "^2.0.0",
