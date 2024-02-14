@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/process-read-stdin/tags). For example,
+
+```javascript
 import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@v0.2.0-deno/mod.js';
 ```
 
@@ -114,7 +119,7 @@ stdin( 'utf8', onRead );
 ```javascript
 import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@deno/mod.js';
 import stream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@deno/mod.js';
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@v0.2.0-deno/mod.js';
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@deno/mod.js';
 
 function onRead( error, data ) {
     if ( error ) {
