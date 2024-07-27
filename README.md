@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/process-read-stdin/tags). For example,
+
+```javascript
 import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@v0.2.2-esm/index.mjs';
 ```
 
@@ -119,7 +124,7 @@ stdin( 'utf8', onRead );
 
 import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@esm/index.mjs';
 import stream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@esm/index.mjs';
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@v0.2.2-esm/index.mjs';
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@esm/index.mjs';
 
 function onRead( error, data ) {
     if ( error ) {
