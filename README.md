@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@deno/mod.js';
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@v0.2.3-deno/mod.js';
 ```
 
 #### stdin( \[encoding,] clbk )
@@ -114,7 +114,7 @@ stdin( 'utf8', onRead );
 ```javascript
 import string2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-string@deno/mod.js';
 import stream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@deno/mod.js';
-import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@deno/mod.js';
+import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-read-stdin@v0.2.3-deno/mod.js';
 
 function onRead( error, data ) {
     if ( error ) {
